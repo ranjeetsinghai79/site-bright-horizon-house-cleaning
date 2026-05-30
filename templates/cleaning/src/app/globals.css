@@ -8,3 +8,17 @@
    ═══════════════════════════════════════════════════════════════ */
 .loading-screen { background: var(--brand-bg); }
 .loading-screen .aurora-blob { background: var(--brand-blob-1); }
+
+
+/* ── Design Profile: Editorial Luxury ── */
+/* ── Fonts: Playfair Display + Source Sans 3 ── */
+:root {
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+  --brand-accent: #0891B2;
+  --brand-accent-light: #22D3EE;
+  --brand-accent-glow: rgba(8,145,178,0.20);
+  --brand-grad-from: #22D3EE;
+  --brand-grad-to: #0891B2;
+  --shadow-cta: 0 8px 32px -4px rgba(8,145,178,0.25);
+}
