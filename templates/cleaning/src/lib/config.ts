@@ -2,109 +2,60 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "cleaning",
-  name: "Sparkle Clean Co.",
-  tagline: "Spotless Home. Zero Stress.",
-  phone: "(555) 789-0123",
-  phoneHref: "tel:+15557890123",
-  email: "hello@sparkleclean.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Lathrop", "Mountain House", "Ripon"],
-  license: "CA Business #789012",
-  since: "2012",
-  google_rating: "4.9",
-  review_count: "523",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Bright Horizon House Cleaning",
+    tagline: "Sparkling Clean Homes, Every Time.",
+    phone: "(209) 644-9328",
+    phoneHref: "tel:+12096449328",
+    email: "info@brighthorizoncleaning.com",
+    address: "209 Eagle Ct, Modesto, CA 95350, USA",
+    city: "Modesto",
+    serviceAreas: ["Modesto"],
+    license: undefined,
+    since: "2020", // Estimated based on review dates
+    google_rating: "5",
+    review_count: "2",
+    emergency: false,
+    theme: "slate",
+    niche: "cleaning",
+  },
 
   services: [
-  { icon: "sparkles", title: "Deep Cleaning", desc: "One-time top-to-bottom clean. Perfect for move-in/out, post-construction, or a seasonal fresh start. We leave no corner untouched.", urgent: false },
-  { icon: "calendar", title: "Weekly / Bi-Weekly", desc: "Recurring cleaning on your schedule. Same trusted cleaner every visit. Cancel anytime, no contracts.", urgent: false },
-  { icon: "truck", title: "Move In / Move Out", desc: "Professional clean for your old place or new home. Deposit-back guaranteed or we re-clean free.", urgent: false },
-  { icon: "building", title: "Commercial Cleaning", desc: "Offices, retail spaces, medical facilities. Nightly, weekly, or custom schedule. Bonded and insured.", urgent: false },
-  { icon: "home", title: "Post-Construction", desc: "Dust, debris, paint overspray — we handle it all. Move-in ready within 24 hours of construction.", urgent: false },
-  { icon: "key", title: "Airbnb Turnover", desc: "Between-guest cleaning that earns 5-star reviews. Quick turnaround. Fresh linens. Restock supplies.", urgent: false },
-],
+    { icon: "home", title: "Deep Cleaning", desc: "Thorough, detailed cleaning for a truly refreshed home.", urgent: false },
+    { icon: "clock", title: "Weekly / Bi-Weekly Cleaning", desc: "Regular cleaning schedules to maintain a consistently tidy space.", urgent: false },
+    { icon: "truck", title: "Move In / Move Out Cleaning", desc: "Comprehensive cleaning services for seamless transitions.", urgent: false },
+    { icon: "briefcase", title: "Commercial Cleaning", desc: "Professional cleaning solutions for businesses and offices.", urgent: false },
+    { icon: "hammer", title: "Post-Construction Cleaning", desc: "Removing dust and debris after renovations for a pristine finish.", urgent: false },
+    { icon: "star", title: "Airbnb Turnover Cleaning", desc: "Efficient and reliable cleaning to prepare your rental for new guests.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Michelle B.", location: "Tracy, CA", stars: 5, text: "My house has never been this clean. The team arrived on time, worked methodically, and even cleaned spots I didn't ask for. Subscribing immediately." },
-  { name: "David S.", location: "Stockton, CA", stars: 5, text: "Used them for move-out cleaning. Landlord returned the full deposit with a compliment about the condition. Worth every dollar." },
-  { name: "Airbnb Host A.", location: "Manteca, CA", stars: 5, text: "They turn my unit over in 2 hours no matter the condition. Guests consistently give 5 stars for cleanliness. Best business decision I made." },
-],
+    { name: "Aleah Andamon Manalundong", location: "Modesto, CA", stars: 5, text: "Vacation rental cleaning services were so convenient, and I’m grateful for their fast response! I submitted a quote on Friday afternoon and responded to my inquiry first thing Saturday morning. By Sunday noon, the team was at our door! Everyone was kind and easy to work with, and a freshly cleaned home is peace of mind for two working parents of an eight-month-old!" },
+    { name: "Basit Ali", location: "Modesto, CA", stars: 5, text: "They are always consistent whenever I have my house cleaned. Easily the best local residential cleaning company I've hired. They come early, get things done, and does a thorough job with it." }
+  ],
 
   trustBadges: [
-  "Background-Checked Staff", "Fully Insured", "Eco-Friendly Products",
-  "Satisfaction Guarantee", "No Contracts", "5-Star Average"
-],
+    "Licensed & Insured", "5-Star Rated", "Flexible Scheduling", "Eco-Friendly Products"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2615,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 14,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 5.0, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 2, label: "Reviews", suffix: "+", decimals: 0 },
+    { value: 4, label: "Years Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books cleanings, handles reschedules, and collects post-service reviews via call, text, or WhatsApp. Always on, never misses a lead."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "sparkles", title: "Eco-Friendly Products", desc: "We use safe, effective, and environmentally conscious cleaning solutions." },
+    { icon: "shield-check", title: "Background-Checked Cleaners", desc: "Our team is thoroughly vetted for your peace of mind and security." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "We stand by our work; your happiness is our top priority." },
+    { icon: "clock", title: "Flexible Scheduling", desc: "We work around your busy life, offering convenient appointment times." },
+    { icon: "award", title: "Bonded & Insured", desc: "Fully protected for your property and our team's safety." },
+    { icon: "phone", title: "Easy Online Booking", desc: "Schedule your cleaning service quickly and effortlessly online." }
+  ],
 
-  formServiceOptions: [
-  "Deep Cleaning",
-  "Weekly / Bi-Weekly",
-  "Move In / Move Out",
-  "Commercial Cleaning",
-  "Post-Construction",
-  "Airbnb Turnover"
-],
+  formServiceOptions: ["Deep Cleaning", "Weekly / Bi-Weekly Cleaning", "Move In / Move Out Cleaning", "Commercial Cleaning", "Post-Construction Cleaning", "Airbnb Turnover Cleaning"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
