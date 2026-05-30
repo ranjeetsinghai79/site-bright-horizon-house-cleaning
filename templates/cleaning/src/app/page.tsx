@@ -1,4 +1,5 @@
-import { Nav, Hero, Services, WhyUs, Reviews, ServiceAreas, Contact, Footer } from "@core/web"
+import { Nav, HeroBento, WhyUs, Reviews, ServiceAreas, Contact, Footer } from "@core/web"
+import { GuaranteeSection } from "@/components/guarantee-section"
 import { config } from "@/lib/config"
 
 export default function Home() {
@@ -6,15 +7,20 @@ export default function Home() {
     <>
       <Nav config={config} scrolledTheme="light" />
       <main>
-        <Hero config={config} posterSrc="/hero-1.jpg" />
-        <Services config={config} layout="horizontal" />
+        <HeroBento config={config} photoSrc="/hero-1.jpg" />
+        <GuaranteeSection config={config} />
         <WhyUs config={config} />
         <Reviews
           config={config}
-          ctaText={`Join ${config.business.review_count}+ Happy Customers — Call Now`}
+          ctaText={`Join ${config.business.review_count}+ clean homes in ${config.business.city}`}
         />
         <ServiceAreas config={config} />
-        <Contact config={config} />
+        <Contact
+          config={config}
+          heading="Book Your First Clean"
+          paragraph="First-time clients get 10% off. Book online or call — takes 60 seconds."
+          submitText="Schedule My Clean"
+        />
       </main>
       <Footer config={config} />
     </>
